@@ -1,21 +1,19 @@
-//
-//  ContentView.swift
-//  SwiftBugApp
-//
-//  Created by Kevin Fowler on 3/26/20.
-//  Copyright © 2020 Imagine Financial, Inc. All rights reserved.
-//
-
 import SwiftUI
+import package
 
 struct ContentView: View {
-    var body: some View {
-        Text("Hello, World!")
-    }
+  var body: some View {
+    VStack {
+      LoginForm()
+    }.breaks()
+      .padding(.horizontal, 30)
+  }
 }
 
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView()
-    }
+private struct LoginForm: View {
+  var body: some View {
+    VStack {
+      EmptyView()
+    }.padding()
+  }
 }

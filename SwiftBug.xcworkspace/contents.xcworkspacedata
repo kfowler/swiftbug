@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:package/package.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:app/SwiftBugApp/SwiftBugApp.xcodeproj">
    </FileRef>
 </Workspace>

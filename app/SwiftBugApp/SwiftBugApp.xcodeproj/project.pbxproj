@@ -13,7 +13,23 @@
 		65F30CBE242DAB79009F663F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 65F30CBD242DAB79009F663F /* Assets.xcassets */; };
 		65F30CC1242DAB79009F663F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 65F30CC0242DAB79009F663F /* Preview Assets.xcassets */; };
 		65F30CC4242DAB79009F663F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65F30CC2242DAB79009F663F /* LaunchScreen.storyboard */; };
+		65F30CCF242DAC11009F663F /* package.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65F30CCE242DAC11009F663F /* package.framework */; };
+		65F30CD0242DAC11009F663F /* package.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 65F30CCE242DAC11009F663F /* package.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		65F30CD1242DAC12009F663F /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				65F30CD0242DAC11009F663F /* package.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		65F30CB4242DAB78009F663F /* SwiftBugApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftBugApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -24,6 +40,7 @@
 		65F30CC0242DAB79009F663F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		65F30CC3242DAB79009F663F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		65F30CC5242DAB79009F663F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		65F30CCE242DAC11009F663F /* package.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = package.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +48,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				65F30CCF242DAC11009F663F /* package.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +60,7 @@
 			children = (
 				65F30CB6242DAB78009F663F /* SwiftBugApp */,
 				65F30CB5242DAB78009F663F /* Products */,
+				65F30CCD242DAC11009F663F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -75,6 +94,14 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		65F30CCD242DAC11009F663F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				65F30CCE242DAC11009F663F /* package.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -85,6 +112,7 @@
 				65F30CB0242DAB78009F663F /* Sources */,
 				65F30CB1242DAB78009F663F /* Frameworks */,
 				65F30CB2242DAB78009F663F /* Resources */,
+				65F30CD1242DAC12009F663F /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
